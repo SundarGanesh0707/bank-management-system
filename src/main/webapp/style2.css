@@ -1,0 +1,677 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    margin:0%;
+    overflow: hidden;
+}
+
+#header{
+    width:100%;
+    height: 10%;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#mainBox{
+    width:100%;
+    height: 90%;
+    background-color: #2d2d2d;
+    color: aliceblue;
+    display: flex;
+
+}
+
+#mainLeftSide{
+    width: 25%;
+    height: 100%;
+    background-color: #212121;
+}
+
+#mainRightSide{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#headerLeftSide{
+    width: 24%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#options{
+    width:50%;
+    height:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.op:hover{
+    border-bottom: 3px solid #212121;
+}
+
+#headerRightSide{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#dashboard{
+    width: 100%;
+    height: 11%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.dashOption{
+    width: 80%;
+    height: 7%;
+    font-size: 18px;
+    font-weight: 550;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-indent: 10px;
+}
+
+.dashOption:hover{
+    background-color: #2d2d2d;
+}
+
+#topic{
+    width:100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#content{
+    width:100%;
+    height:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addOption{
+    width:90%;
+    height:5%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#resson{
+    width: 70%;
+    height: 30%;
+    resize: none;
+    background: none;
+    border: 2px solid #212121;
+    color: antiquewhite;
+}
+
+#wholeOp{
+    width:20%;
+    height:100%;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opAdd{
+    width:50%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+input,select:focus{
+    outline: none;
+}
+
+#parent{
+    width:80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.child{
+    width:60%;
+    height: 60%;
+    background-color: #4CAF50;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* color: #212121; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 15px 10px;
+}
+
+.subparent {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #e9e9e9; */
+    font-weight: 600;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+}
+
+#customerSearch{
+    width: 80%;
+    height: 100%;
+    /* background-color: #4CAF50; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.smallBoxes{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputt{
+    width:50%;
+}
+
+
+.child{
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 60%;
+    font-size: 18px;
+}
+
+.superChild{
+    width:100%;
+    height:20%;
+    display: flex;   
+}
+
+#histroyTable {
+    width: 90%;
+    height: 70%;
+    display: flex;
+    /* justify-content: flex-start; */
+    border-bottom: none;
+    flex-direction: column;
+    border: 1px solid #212121;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+
+.childd {
+    border-right: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    font-size: 15px;
+}
+
+.parent{
+    width:100%;
+    height: 10%;
+    display: flex;
+    background-color: #4CAF50;
+    font-size: 16px;
+    font-weight: 600;
+    border-right: none;
+}
+
+#childs{
+    width:100%;
+    height:90%;
+    border: 1px solid black;
+    border-top: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#childs::-webkit-scrollbar {
+    display: none;
+}
+
+.subChild{
+    width:18%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #212121;
+    border-right: none;
+}
+
+.subChilds{
+    width:33.34%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #212121;
+    border-right: none;
+    font-size: 16px;
+}
+
+#table{
+    width: 80%;
+    height: 70%;
+    border: 1px solid #212121;
+}
+
+#parent::-webkit-scrollbar {
+    display: none;
+}
+
+#searchBox{
+    width:80%;
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+label{
+    color: #4CAF50;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.pBox{
+    width:50%;
+    height:70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+option{
+    color: black;
+}
+
+input, select{
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid #212121;
+    background: none;
+    color: antiquewhite;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+
+#addBox {
+    width: 70%;
+    height: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+#submit{
+    border: none;
+    width: auto;
+    background: #4CAF50;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 !important;
+    line-height: 16px;
+    text-transform: uppercase;
+    max-height: 36px;
+    height: 36px;
+    letter-spacing: 0.5px;
+}
+
+#inputFildes{
+    width: 50%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#message{
+    width:60%;
+    height: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#box{
+    width:90%;
+    height:80%;
+    background-color: rgb(221, 199, 199);
+    display: contents;
+}
+
+#Pbox{
+    width:90%;
+    height: 60%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loanBox {
+    width: 30%;
+    height: 100%;
+    background-color: #2d2d2d;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 10%;
+}
+.aboutLoan{
+    margin-left: 10%;
+    width:80%;
+    height: 40%;
+    font-size: 15px;
+    margin-top: 15%;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+
+h3{
+    margin-left: 10%;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.applyButton{
+    width: 45%;
+    height: 8%;
+    border: none;
+    border-radius: 2px;
+    font-weight: 800;
+    font-size: 15px;
+    margin-left: 25%;
+    margin-top: 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+#empTable{
+    width: 95%;
+    height:70%;
+    /* background-color: #fff; */
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.empTableHead{
+    width: 100%;
+    height:10%;
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empTableLeg{
+    width: 100%;
+    height:10%;
+    /* background-color: #4CAF50; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.loanID{
+    width:10%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.employeeId{
+    width:11%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.customerID{
+    width:18%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.employeeName{
+    width:20%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.employeeDOB{
+    width:10%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.employeePhoneNo{
+    width:14%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.employeeAddress{
+    width:20%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.LoanType{
+    width:13%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.reject{
+    width:5%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.accept{
+    width:5%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.customerAadharNo{
+    width:14%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+
+
+.employeeBranchId{
+    width:12%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.customerGender{
+    width:10%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+.employeeRole{
+    width:12%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#imageBox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: rgba(0, 0, 0, 0.40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#cancelButton {
+    width: 90%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 40px;
+    color: #fff;
+}
+
+#frame{
+    width: 70%;
+    height: 70%;
+    margin-top: -5%;
+}
+
+.acceptButton{
+    width: 70%;
+    height:70%;
+    background-color: #4CAF50;
+    border: none;
+
+}
+
+.rejectButton{
+    width: 70%;
+    height:70%;
+    background-color: #b53737;
+    border: none;
+}

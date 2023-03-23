@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet" type="text/css" id="mode"/>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3d481caf2d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body onload="insertName()">
+    
+<div id = "header">
+
+    <div id="headerLeftSide">
+        <i class="fa-solid fa-building-columns"></i>SUNDAR BANK OF INDIA
+    </div>
+
+    <div id="options">
+        
+            <div class="op" onclick="switchToBranch()">
+                BRANCHS
+            </div>
+            <div class="op" onclick="switchToEmployee()">
+                EMPLOYEES
+            </div>
+            <div class="op" onclick="switchToCustomer()">
+                CUSTOMERS
+            </div>
+            <div class="op" onclick="switchToAccount()">
+                ACCOUNTS
+            </div>
+        
+    </div>
+
+    <div id="headerRightSide">
+
+        <div class="op" onclick="switchToProfile()">
+            <i class="fa-solid fa-user"></i><span id = "userName"></span>
+        </div>
+        <div onclick="logout()">
+            <i class="fa-solid fa-right-from-bracket"></i><span> Logout</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div id = "mainBox">
+
+    <div id="mainLeftSide">
+        
+    </div>
+
+    <div id="mainRightSide">
+             
+
+        <div id = "topic">ADD ACCOUNT</div>
+                <div id = "content">
+            <div id = "inputFildes">
+                <label>Old Password</label>
+                <input type = "text" id = "oldPassword">
+                <br>
+                <label>New Password</label>
+                <input type = "password" id = "newPassword">
+                <br>
+                <label>Re-Password</label>
+                <input type = "password" id = "rePassword">
+                <br>
+                <button id = "submit" onclick="changePassword()">CHANGE</button>
+            </div>
+        </div>
+        </div>
+
+
+    </div>
+
+</div>
+    
+
+    
+</body>
+</html>

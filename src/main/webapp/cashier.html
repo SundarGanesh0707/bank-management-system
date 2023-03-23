@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet" type="text/css" id="mode"/>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3d481caf2d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body onload="insertName()">
+    <div id = "header">
+
+        <div id="headerLeftSide">
+            <i class="fa-solid fa-building-columns"></i>SUNDAR BANK OF INDIA
+        </div>
+    
+        <div id="options">
+            
+            <div class = "op" onclick="switchToTransition()">
+                TRANSACTION
+            </div>
+                <div class="op" onclick="switchToCashierAccount()">
+                    ACCOUNTS
+                </div>
+            
+        </div>
+    
+        <div id="headerRightSide">
+    
+            <div class="op" onclick="switchToProfile()">
+                <i class="fa-solid fa-user"></i><span id = "userName"></span>
+            </div>
+            <div onclick="logout()">
+                <i class="fa-solid fa-right-from-bracket"></i><span> Logout</span>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    <div id = "mainBox">
+    
+        <div id="mainLeftSide">
+            <div id = "dashboard"><span id = "dashHead" style = "color: #4CAF50;">T</span><div id = "dashText">Transaction dashboard</div></div><div class="dashOption" onclick="switchToTransact()">Transaction</div><div class="dashOption" onclick="switchToTransfer()">Transfer</div>
+        </div>
+    
+        <div id="mainRightSide">                
+            <div id = "topic">TRANSFER</div><div id = "content" style = "width: 80%;height: 80%;"><div id = "inputFilds" style = "height:100%;display: flex;flex-direction: column;justify-content: space-between;width:50%;margin-left: 10%;" ><label>Customer Id</label><input type = "number" id = "customerId"><br><label>From Account No</label><input type = "number" id="fromAccountNo"><br><label>To Account No</label><input type = "number" id = "toAccountNo"><br><label>Amount</label><input type = "number" id="amount"><br><label>Date</label><input type = "text" id = "todayDate" readonly><br><label>Transact Type</label><select id="transactType"><option value = "TRANSFERED">TRANSFER</option></select><br><div id="addBox" style = "height: 10%;"><button id = "submit" onclick="transfer()" >SUBMIT</button></div></div>
+    
+    
+        </div>
+    
+    </div>
+        
+    
+    
+</body>
+</html>

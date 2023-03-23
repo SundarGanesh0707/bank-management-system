@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet" type="text/css" id="mode"/>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3d481caf2d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body onload="insertName()">
+    
+<div id = "header">
+
+    <div id="headerLeftSide">
+        <i class="fa-solid fa-building-columns"></i>SUNDAR BANK OF INDIA
+    </div>
+
+    <div id="options">
+        
+            <div class="op" onclick="switchToReceipt()">
+                RECEIPTS
+            </div>
+            <div class="op" onclick="switchToManagerEmployee()">
+                EMPLOYEES
+            </div>
+            <div class="op" onclick="switchToManagerCustomer()">
+                CUSTOMERS
+            </div>
+            <div class="op" onclick="switchToAccount()">
+                ACCOUNTS
+            </div>
+            <div class="op" onclick="switchToRequest()">
+                LOAN
+            </div>
+        
+    </div>
+
+    <div id="headerRightSide">
+
+        <div class="op" onclick="switchToProfile()">
+            <i class="fa-solid fa-user"></i><span id = "userName"></span>
+        </div>
+        <div onclick="logout()">
+            <i class="fa-solid fa-right-from-bracket"></i><span> Logout</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div id = "mainBox">
+
+    <div id="mainLeftSide">
+    </div>
+
+    <div id="mainRightSide">
+        <div id = "topic">CUSTOMER RECEIPTS</div><div id = "searchBox"><div id = "customerSearch"><div class="smallBoxes"><label style = "margin-top: -3%;">CustomerId : </label><input type = "number" id = "customerId" class = "inputt"></div><div class="smallBoxes"><label style = "margin-top: -3%;">From Date : </label><input type = "date" id = "fromDate" class = "inputt"></div><div class="smallBoxes"><label style = "margin-top: -3%;">To Date : </label><input type = "date" id = "toDate" class = "inputt"></div></div><button id = "submit" onclick="searchCustomerReceipt()">SEARCH</button>  </div><div id = "histroyTable"><div class = "parent"><div class="subChild">DATE</div><div class="subChild">FROM ACCOUNT NO</div><div class="subChild">TO ACCOUNT NO</div><div class="subChild">TRANSITION TYPE</div><div class="subChild">AMOUNT</div><div class="subChild">BALANCE</div></div><div id = "childs"></div></div>
+            
+    </div>
+
+</div>
+
+<div id = "imageBox" style = "display: none;"><div id = "cancelButton"><i class="fa-solid fa-xmark" onclick="cutTheIfarme()"></i></div><iframe src = "" id = "frame"></iframe></div>
+    
+
+    
+</body>
+</html>

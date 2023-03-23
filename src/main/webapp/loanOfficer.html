@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet" type="text/css" id="mode"/>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3d481caf2d.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body onload="insertName()">
+    <div id = "header">
+
+        <div id="headerLeftSide">
+            <i class="fa-solid fa-building-columns"></i>SUNDAR BANK OF INDIA
+        </div>
+    
+        <div id="options">
+            
+            <div class = "op" onclick="switchToLoan()">
+                LOAN
+            </div>
+                <div class="op" onclick="switchToCashierAccount()">
+                    ACCOUNTS
+                </div>
+            
+        </div>
+    
+        <div id="headerRightSide">
+    
+            <div class="op" onclick="switchToProfile()">
+                <i class="fa-solid fa-user"></i><span id = "userName"></span>
+            </div>
+            <div onclick="logout()">
+                <i class="fa-solid fa-right-from-bracket"></i><span> Logout</span>
+            </div>
+    
+        </div>
+    
+    </div>
+    
+    <div id = "mainBox">
+    
+        <div id="mainLeftSide">
+        </div>
+    
+        <div id="mainRightSide">  
+            <!-- <iframe src="./home/ReadFile?path=/home/sundar-zstk307/Documents/100.pdf"></iframe>
+             -->
+             <div id = "topic">PAY LOAN</div><div id = "content" style = "width: 80%;height: 60%;"><div id = "inputFilds" style = "height:100%;display: flex;flex-direction: column;justify-content: space-between;width:50%;margin-left: 10%;" ><label>Loan Id</label><input type = "number" id = "loanId"><br><label>Account No</label><input type = "number" id="accountNo"><br><label>Date</label><input type = "date" id = "todayDate" readonly><br><label>Amount</label><input type = "number" id="amount"><br><div id="addBox" style = "height: 10%;"><button id = "submit" onclick="transfer()" >SUBMIT</button></div></div>
+             
+            
+        </div>
+    </div>
+    
+    
+    <!-- <div class="empTableLeg"><div class = "loanID">LOAN ID</div><div class = "customerID">CUS ID & NAME</div><div class = "employeeDOB">DATE</div><div class = "employeePhoneNo">AMOUNT</div><div class= "LoanType">LOAN TYPE</div><div class= "customerAadharNo">BALANCE AMOUNT</div><div class= "customerGender">STATUS</div><div class = "accept"><button class="acceptButton"><i class="fa-solid fa-check"></i></button></div><div class = "reject"><button class="rejectButton"><i class="fa-solid fa-xmark"></i></button></div></div> -->
+    
+    
+</body>
+</html>
+
+
+
+
